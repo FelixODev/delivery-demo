@@ -2,6 +2,7 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - name: Install Ionic CLI
+  - name: Install Ionic & Firebase CLI
     init: |
-      npm install -g @ionic/cli
+      npm install -g @ionic/cli firebase-tools
+    command: firebase login --no-localhost
